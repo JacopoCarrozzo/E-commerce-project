@@ -9,8 +9,12 @@ const ProductList: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const url = category === "all" ? "http://localhost:5000/products" : `http://localhost:5000/products?category=${category}`;
     
+    const BACKEND_URL = "https://backend-ecommerce-production-e3f9.up.railway.app";
+
+    const url = category === "all" ? `${BACKEND_URL}/products` : `${BACKEND_URL}/products?category=${category}`;
+
+
     setLoading(true);
     axios.get(url)
       .then((response) => {
