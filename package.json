@@ -46,5 +46,10 @@
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17"
-  }
+  },
+  "description": "The layout is built using Flexbox and CSS Grid classes from Tailwind CSS to create a responsive and clean product grid. By leveraging Tailwind's mobile-first approach, the product cards automatically adjust from a single column on small screens to multiple columns on larger devices, ensuring optimal user experience across all screen sizes",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
